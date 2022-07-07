@@ -1,16 +1,13 @@
 #!/usr/bin/python3
 
-def main():
-    arglen = len(argv) - 1
-    if not arglen:
-        print("0 argument. ")
-        return
+if __name__ == "__main__":
+    from sys import argv
 
-    print("{:d} argument{:s}:".format(arglen, "s" if arglen > 1 else ""))
-
-    """loop through argument and print"""
-    for index in range(1, arglen + 1):
-        print(f"{index:d}: {argv[index]:s}")
-
-        if __name__ == "__mai__":
-            main()
+    if len(argv) == 1:
+        print("{} arguments.".format(len(argv) - 1))
+    elif len(argv) == 2:
+        print("{} argument:".format(len(argv) - 1))
+    else:
+        print("{} arguments:".format(len(argv) - 1))
+        for i in range(1, len(argv)):
+            print("{}: {}".format(i, argv[i])
