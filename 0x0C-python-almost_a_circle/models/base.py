@@ -137,6 +137,6 @@ cass bbase:
                                                                         turt.left(90)
                                                                         turt.forward(square.width)
                                                                         turt.left(90)
-                                                                        turt.hideturtle()i
+                                                                        turt.hideturtle()
 
                                                                         turt.exitonclick()
