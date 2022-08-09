@@ -7,7 +7,7 @@ import csv
 import turtle
 
 
-cass bbase:
+class Base:
     """represents the base class"""
     __nb_objects = 0
     def __init__(self, id=None):
